@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Injury Lawyer in Brooklyn. Personal Injury Attorney in NY. Personal Injury Lawyer in New York</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #333;
+      background: #fff;
+      font-size: 15px;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ══════════════════════════════════════
+       TOP HEADER
+    ══════════════════════════════════════ */
+    .top-header {
+      background: #fff;
+      padding: 20px 0 18px;
+    }
+    .top-header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* LOGO */
+    .logo-wrap {
+      flex-shrink: 0;
+      margin-right: 160px;
+    }
+    .logo-svg-text {
+      font-family: Arial Black, Arial, sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    .logo-line1 { font-size: 42px; color: #1a1a1a; display: block; }
+    .logo-line2 { font-size: 42px; color: #1a1a1a; display: block; }
+    .logo-line3 { font-size: 42px; color: #4a7c2f; display: block; }
+    .logo-g { color: #4a7c2f; }
+    .logo-l { color: #4a7c2f; }
+
+    /* CONTACT INFO */
+    .header-contacts {
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+      flex: 1;
+    }
+    .hc-col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .hc-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    .hc-row .ico {
+      width: 26px;
+      height: 26px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Email icon - green envelope */
+    .ico-email {
+      border: 2px solid #4a7c2f;
+      border-radius: 2px;
+      font-size: 13px;
+      color: #4a7c2f;
+    }
+    /* Phone icon - green phone */
+    .ico-phone {
+      border: 2px solid #4a7c2f;
+      border-radius: 2px;
+      font-size: 13px;
+      color: #4a7c2f;
+    }
+    /* Geo icon */
+    .ico-geo {
+      font-size: 16px;
+      color: #4a7c2f;
+    }
+    .hc-row a { color: #333; }
+    .hc-row a:hover { text-decoration: underline; }
+    .callback-a { color: #4a7c2f !important; font-family: Arial, Helvetica, sans-serif; font-size: 14px; cursor: pointer; }
+    .callback-a:hover { text-decoration: underline !important; }
+
+    /* Language flag */
+    .lang-wrap {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #555;
+    }
+    .us-flag {
+      width: 32px;
+      height: 20px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #bbb;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .us-flag .stripe { position: absolute; left: 0; right: 0; }
+    .us-flag .canton { position: absolute; top: 0; left: 0; width: 14px; height: 11px; background: #3C3B6E; }
+
+    /* ══════════════════════════════════════
+       NAVBAR
+    ══════════════════════════════════════ */
+    .navbar {
+      background: #2b2b2b;
+      border-bottom: none;
+    }
+    .navbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: stretch;
+    }
+    .nav-item {
+      flex: 1;
+      position: relative;
+      border-right: 1px solid #3d3d3d;
+    }
+    .nav-item:first-child { border-left: 1px solid #3d3d3d; }
+    .nav-item > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 6px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      gap: 5px;
+      transition: color .15s;
+    }
+    .nav-item > a.active { color: #c8a84b; }
+    .nav-item > a:hover { color: #c8a84b; }
+    .nav-arrow { font-size: 10px; color: #888; }
+
+    /* Dropdown */
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 220px;
+      background: #2b2b2b;
+      border-top: 2px solid #4a7c2f;
+      z-index: 300;
+      box-shadow: 0 4px 10px rgba(0,0,0,.4);
+    }
+    .nav-dropdown li a {
+      display: block;
+      padding: 9px 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #ccc;
+      border-bottom: 1px solid #3d3d3d;
+      transition: color .15s, background .15s;
+    }
+    .nav-dropdown li:last-child a { border-bottom: none; }
+    .nav-dropdown li a:hover { background: #383838; color: #fff; }
+    .nav-item:hover .nav-dropdown { display: block; }
+
+    /* ══════════════════════════════════════
+       HERO BANNER
+    ══════════════════════════════════════ */
+    .hero {
+      background: #4a7c2f;
+      position: relative;
+      min-height: 390px;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Left green text area */
+    .hero-left {
+      width: 460px;
+      flex-shrink: 0;
+      padding: 56px 40px 56px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-left h1 {
+      font-family: Georgia, serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .hero-left p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    .hero-btn {
+      display: inline-block;
+      margin-top: 16px;
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 12px 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+      width: fit-content;
+    }
+    .hero-btn:hover { background: #fff; color: #4a7c2f; }
+
+    /* Diagonal divider — the right-leaning slanted cut */
+    .hero-divider {
+      width: 120px;
+      background: #4a7c2f;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+      /* skew creates the diagonal cut */
+      transform: skewX(-6deg);
+      margin-right: -30px;
+    }
+
+    /* Right photo area */
+    .hero-right {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      display: block;
+    }
+    /* NYC skyline CSS fallback */
+    .nyc-skyline {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: linear-gradient(180deg, #6ec6e8 0%, #a8d8f0 45%, #c5e5f5 70%, #d4ecf7 100%);
+      display: flex;
+      align-items: flex-end;
+    }
+    .nyc-skyline svg { width: 100%; height: 390px; display: block; }
+
+    /* ══════════════════════════════════════
+       ASSOCIATION BADGES
+    ══════════════════════════════════════ */
+    .badges {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px 30px 20px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    .badge-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    /* NYSBA badge */
+    .nysba-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .nysba-icon {
+      width: 60px;
+      height: 58px;
+      background: #1a5fa8;
+      clip-path: polygon(10% 100%, 0% 60%, 0% 30%, 10% 0%, 90% 0%, 100% 30%, 100% 60%, 90% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .nysba-text {
+      font-family: Arial Black, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 900;
+      color: #1a5fa8;
+      letter-spacing: 1px;
+    }
+    /* NYSTLA */
+    .nystla-icon {
+      width: 56px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    .nystla-text {
+      font-family: Arial Black, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 900;
+      color: #111;
+      letter-spacing: 1px;
+    }
+
+    /* ══════════════════════════════════════
+       ABOUT / REVIEWS / SOCIAL  (3 col)
+    ══════════════════════════════════════ */
+    .three-col-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .three-col {
+      padding: 0 24px 0 0;
+      border-right: 1px solid #e5e5e5;
+    }
+    .three-col:last-child { border-right: none; padding-right: 0; padding-left: 24px; }
+    .three-col:nth-child(2) { padding: 0 24px; }
+
+    .col-title {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    .col-underline {
+      height: 3px;
+      background: #4a7c2f;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .col-link {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #4a7c2f;
+      display: inline-block;
+    }
+    .col-link:hover { text-decoration: underline; }
+    .three-col p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    /* ══════════════════════════════════════
+       GAMBONE NAME + PRACTICE AREAS  (2 col)
+    ══════════════════════════════════════ */
+    .two-col-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px 30px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .firm-name-col h2 {
+      font-family: Georgia, serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+    .firm-name-col .test-label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+    }
+    .practice-col h2 {
+      font-family: Georgia, serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    .practice-list {
+      list-style: disc;
+      padding-left: 22px;
+    }
+    .practice-list li {
+      margin-bottom: 6px;
+    }
+    .practice-list li a {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #4a7c2f;
+      line-height: 1.5;
+    }
+    .practice-list li a:hover { text-decoration: underline; }
+
+    /* ══════════════════════════════════════
+       CONTACT FORM SECTION  (beige bg)
+    ══════════════════════════════════════ */
+    .contact-section {
+      background: #e8e4d9;
+      padding: 36px 30px;
+    }
+    .contact-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .contact-section h2 {
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 22px;
+    }
+    .contact-form-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+      min-width: 200px;
+    }
+    .form-field label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    .form-field input {
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #333;
+      outline: none;
+      border-radius: 0;
+    }
+    .form-field input:focus { border-color: #4a7c2f; }
+    .contact-btn {
+      background: #4a7c2f;
+      color: #fff;
+      border: none;
+      padding: 13px 36px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: background .2s;
+      white-space: nowrap;
+    }
+    .contact-btn:hover { background: #3a6222; }
+    .contact-success {
+      display: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #4a7c2f;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    /* ══════════════════════════════════════
+       FOOTER  (dark teal)
+    ══════════════════════════════════════ */
+    .footer {
+      background: #1a3a38;
+      padding: 40px 30px 0;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 60px;
+      padding-bottom: 36px;
+    }
+
+    .footer-contacts h3 {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    .footer-contacts p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .footer-contacts a { color: #bbb; }
+    .footer-contacts a:hover { color: #fff; text-decoration: underline; }
+
+    /* Social icons row */
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .soc-btn {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .soc-fb { background: #3b5998; color: #fff; }
+    .soc-li { background: #0077b5; color: #fff; }
+    .soc-yt { background: #cc0000; color: #fff; }
+    .soc-btn:hover { opacity: .85; }
+
+    /* Practice areas in footer - 2 columns */
+    .footer-practice h3 {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+    }
+    .footer-pa-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 30px;
+    }
+    .footer-pa-grid li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 0;
+      border-bottom: 1px solid #2a4a48;
+    }
+    .footer-pa-grid li::before {
+      content: '·';
+      color: #888;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .footer-pa-grid li a {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #bbb;
+      transition: color .15s;
+    }
+    .footer-pa-grid li a:hover { color: #fff; }
+
+    /* Footer bottom */
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 0;
+      border-top: 1px solid #2a4a48;
+    }
+    .disclaimer-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #777;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .developed-line {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #666;
+      text-align: right;
+    }
+    .developed-line a { color: #999; }
+    .developed-line a:hover { color: #fff; }
+
+    /* ══════════════════════════════════════
+       SCROLL TO TOP BUTTON
+    ══════════════════════════════════════ */
+    .scroll-top {
+      position: fixed;
+      bottom: 28px;
+      right: 24px;
+      width: 42px;
+      height: 42px;
+      background: #4a7c2f;
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity .3s;
+      z-index: 500;
+    }
+    .scroll-top.visible { opacity: 1; }
+    .scroll-top:hover { background: #3a6222; }
+
+    /* ══════════════════════════════════════
+       MODAL
+    ══════════════════════════════════════ */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.5);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: #fff;
+      padding: 36px 32px;
+      max-width: 420px;
+      width: 92%;
+      position: relative;
+      text-align: center;
+    }
+    .modal-box h3 {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+    .modal-box p {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .modal-close {
+      position: absolute; top: 12px; right: 16px;
+      font-size: 20px; color: #888;
+      background: none; border: none; cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+    .modal-input {
+      width: 100%;
+      padding: 10px 13px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      outline: none;
+    }
+    .modal-input:focus { border-color: #4a7c2f; }
+    .modal-submit {
+      width: 100%;
+      background: #4a7c2f;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .modal-submit:hover { background: #3a6222; }
+    .modal-success {
+      display: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #4a7c2f;
+      font-weight: 700;
+      margin-top: 14px;
+    }
+
+    /* ══════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .logo-wrap { margin-right: 40px; }
+      .three-col-section { grid-template-columns: 1fr; }
+      .three-col { border-right: none; padding: 0 0 20px; border-bottom: 1px solid #e5e5e5; }
+      .three-col:last-child { padding-left: 0; }
+      .two-col-section { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 30px; }
+      .hero-left { width: 100%; }
+      .hero { flex-direction: column; }
+      .hero-right { min-height: 220px; }
+      .hero-divider { display: none; }
+    }
+    @media (max-width: 640px) {
+      .top-header-inner { flex-wrap: wrap; }
+      .logo-wrap { margin-right: 0; width: 100%; margin-bottom: 12px; }
+      .header-contacts { flex-direction: column; gap: 8px; }
+      .navbar-inner { flex-wrap: wrap; }
+      .nav-item { flex: none; width: 50%; }
+      .contact-form-row { flex-direction: column; }
+      .footer-pa-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ TOP HEADER ══ -->
+<div class="top-header">
+  <div class="top-header-inner">
+
+    <!-- LOGO -->
+    <a href="#" class="logo-wrap">
+      <div class="logo-svg-text">
+        <span class="logo-line1"><span class="logo-g">G</span>AMBONE</span>
+        <span class="logo-line2"><span class="logo-l">L</span>AW</span>
+        <span class="logo-line3">GROUP</span>
+      </div>
+    </a>
+
+    <!-- CONTACTS -->
+    <div class="header-contacts">
+      <div class="hc-col">
+        <div class="hc-row">
+          <span class="ico ico-email">✉</span>
+          <a href="mailto:agambone@gambonelawgroup.com">agambone@gambonelawgroup.com</a>
+        </div>
+        <div class="hc-row">
+          <span class="ico ico-geo">📍</span>
+          <span>8652 Woodhaven Blvd, Queens,<br/>NY 11421</span>
+        </div>
+      </div>
+      <div class="hc-col">
+        <div class="hc-row">
+          <span class="ico ico-phone">📱</span>
+          <span>Tel: 718 650 5111 / Fax: 718 682 3155</span>
+        </div>
+        <div class="hc-row" style="padding-left:35px;">
+          <a href="#" class="callback-a" onclick="openModal(event)">Callback</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLAG -->
+    <div class="lang-wrap">
+      <div class="us-flag">
+        <div class="stripe" style="top:0;height:3px;background:#B22234;"></div>
+        <div class="stripe" style="top:3px;height:3px;background:#fff;"></div>
+        <div class="stripe" style="top:6px;height:3px;background:#B22234;"></div>
+        <div class="stripe" style="top:9px;height:3px;background:#fff;"></div>
+        <div class="stripe" style="top:12px;height:3px;background:#B22234;"></div>
+        <div class="stripe" style="top:15px;height:3px;background:#fff;"></div>
+        <div class="stripe" style="top:18px;height:2px;background:#B22234;"></div>
+        <div class="canton"></div>
+      </div>
+      <span>▾</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="nav-item">
+      <a href="#" class="active">Home</a>
+    </div>
+    <div class="nav-item">
+      <a href="#about">Attorney Profile</a>
+    </div>
+    <div class="nav-item">
+      <a href="#practice">Practice Areas <span class="nav-arrow">▼</span></a>
+      <ul class="nav-dropdown">
+        <li><a href="#">Motor vehicle accidents</a></li>
+        <li><a href="#">Construction accidents</a></li>
+        <li><a href="#">Municipal liability</a></li>
+        <li><a href="#">Premises liability</a></li>
+        <li><a href="#">Personal injury</a></li>
+        <li><a href="#">Workplace accidents</a></li>
+        <li><a href="#">Wrongful death</a></li>
+        <li><a href="#">Medical malpractice</a></li>
+        <li><a href="#">Product liability</a></li>
+      </ul>
+    </div>
+    <div class="nav-item">
+      <a href="#">In The News</a>
+    </div>
+    <div class="nav-item">
+      <a href="#">Articles</a>
+    </div>
+    <div class="nav-item">
+      <a href="#contact">Contact Us</a>
+    </div>
+    <div class="nav-item">
+      <a href="#">Client Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<div class="hero">
+  <div class="hero-left">
+    <h1>Gambone Law Group, PLLC</h1>
+    <p>is a New York personal injury law firm.</p>
+    <p>We are dedicated to representing the seriously injured</p>
+    <p>within the area of five boroughs of New York City.</p>
+    <button class="hero-btn" onclick="openModal(event)">Request consultation</button>
+  </div>
+
+  <!-- Diagonal slant spacer -->
+  <div class="hero-divider"></div>
+
+  <!-- NYC Skyline -->
+  <div class="hero-right">
+    <div class="nyc-skyline">
+      <svg viewBox="0 0 900 390" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#5ab5da"/>
+            <stop offset="55%" stop-color="#87CEEB"/>
+            <stop offset="100%" stop-color="#c2dff0"/>
+          </linearGradient>
+          <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#4a85a8"/>
+            <stop offset="100%" stop-color="#3a6a88"/>
+          </linearGradient>
+        </defs>
+        <rect width="900" height="390" fill="url(#sky2)"/>
+        <!-- Clouds -->
+        <ellipse cx="150" cy="70" rx="90" ry="32" fill="white" opacity=".93"/>
+        <ellipse cx="210" cy="58" rx="65" ry="26" fill="white" opacity=".88"/>
+        <ellipse cx="105" cy="78" rx="50" ry="20" fill="white" opacity=".8"/>
+        <ellipse cx="560" cy="50" rx="95" ry="30" fill="white" opacity=".9"/>
+        <ellipse cx="630" cy="38" rx="70" ry="24" fill="white" opacity=".84"/>
+        <ellipse cx="505" cy="60" rx="55" ry="20" fill="white" opacity=".76"/>
+        <ellipse cx="810" cy="72" rx="65" ry="24" fill="white" opacity=".82"/>
+        <ellipse cx="760" cy="62" rx="45" ry="18" fill="white" opacity=".7"/>
+
+        <!-- ── Buildings ── -->
+        <!-- Far left low buildings -->
+        <rect x="0"   y="230" width="42"  height="160" fill="#7d90aa"/>
+        <rect x="38"  y="248" width="35"  height="142" fill="#8d9fba"/>
+        <rect x="69"  y="215" width="48"  height="175" fill="#6d7f98"/>
+        <rect x="112" y="238" width="32"  height="152" fill="#7d8fa8"/>
+        <rect x="140" y="202" width="58"  height="188" fill="#8d9fba"/>
+        <rect x="193" y="225" width="38"  height="165" fill="#6d7f98"/>
+        <rect x="226" y="190" width="52"  height="200" fill="#7d90aa"/>
+        <!-- One World Trade Tower -->
+        <rect x="272" y="110" width="52"  height="280" fill="#9ab0c8"/>
+        <rect x="280" y="90"  width="36"  height="26"  fill="#a8bdd5"/>
+        <rect x="286" y="68"  width="24"  height="28"  fill="#b5c8dc"/>
+        <rect x="291" y="42"  width="14"  height="32"  fill="#c0d0e5"/>
+        <rect x="296" y="18"  width="4"   height="30"  fill="#ccd8e8"/>
+        <!-- Buildings right of WTC -->
+        <rect x="318" y="205" width="44"  height="185" fill="#7d8fa8"/>
+        <rect x="357" y="225" width="36"  height="165" fill="#8d9fba"/>
+        <rect x="388" y="195" width="55"  height="195" fill="#7080a0"/>
+        <rect x="438" y="215" width="42"  height="175" fill="#8090b0"/>
+        <rect x="475" y="180" width="60"  height="210" fill="#9ab0c8"/>
+        <rect x="530" y="212" width="45"  height="178" fill="#7d8fa8"/>
+        <!-- Tall dark building -->
+        <rect x="570" y="168" width="58"  height="222" fill="#5a6878"/>
+        <rect x="622" y="188" width="38"  height="202" fill="#7d8fa8"/>
+        <rect x="655" y="175" width="65"  height="215" fill="#8090b0"/>
+        <!-- Blue glass tower -->
+        <rect x="715" y="160" width="55"  height="230" fill="#7a9bb8"/>
+        <rect x="765" y="195" width="42"  height="195" fill="#8090b0"/>
+        <rect x="802" y="180" width="50"  height="210" fill="#7080a0"/>
+        <rect x="847" y="205" width="53"  height="185" fill="#8d9fba"/>
+
+        <!-- Windows lit up -->
+        <g fill="rgba(255,248,150,0.28)">
+          <!-- WTC windows -->
+          <rect x="277" y="120" width="6" height="5"/><rect x="287" y="120" width="6" height="5"/><rect x="297" y="120" width="6" height="5"/>
+          <rect x="277" y="133" width="6" height="5"/><rect x="287" y="133" width="6" height="5"/><rect x="297" y="133" width="6" height="5"/>
+          <rect x="277" y="146" width="6" height="5"/><rect x="287" y="146" width="6" height="5"/><rect x="297" y="146" width="6" height="5"/>
+          <rect x="277" y="159" width="6" height="5"/><rect x="287" y="159" width="6" height="5"/><rect x="297" y="159" width="6" height="5"/>
+          <rect x="277" y="172" width="6" height="5"/><rect x="287" y="172" width="6" height="5"/><rect x="297" y="172" width="6" height="5"/>
+          <!-- Blue tower -->
+          <rect x="720" y="170" width="5" height="4"/><rect x="730" y="170" width="5" height="4"/><rect x="740" y="170" width="5" height="4"/>
+          <rect x="720" y="181" width="5" height="4"/><rect x="730" y="181" width="5" height="4"/><rect x="740" y="181" width="5" height="4"/>
+          <rect x="720" y="192" width="5" height="4"/><rect x="730" y="192" width="5" height="4"/><rect x="740" y="192" width="5" height="4"/>
+          <!-- Dark tower -->
+          <rect x="576" y="178" width="5" height="4"/><rect x="586" y="178" width="5" height="4"/><rect x="596" y="178" width="5" height="4"/>
+          <rect x="576" y="189" width="5" height="4"/><rect x="586" y="189" width="5" height="4"/><rect x="596" y="189" width="5" height="4"/>
+          <!-- Mid buildings -->
+          <rect x="394" y="202" width="5" height="4"/><rect x="404" y="202" width="5" height="4"/><rect x="414" y="202" width="5" height="4"/>
+          <rect x="394" y="213" width="5" height="4"/><rect x="404" y="213" width="5" height="4"/>
+          <rect x="480" y="188" width="5" height="4"/><rect x="490" y="188" width="5" height="4"/><rect x="500" y="188" width="5" height="4"/>
+          <rect x="480" y="199" width="5" height="4"/><rect x="490" y="199" width="5" height="4"/>
+        </g>
+
+        <!-- Water / Harbor -->
+        <rect x="0" y="360" width="900" height="30" fill="url(#water)" opacity=".85"/>
+        <!-- Water shimmer -->
+        <line x1="40"  y1="368" x2="120" y2="368" stroke="rgba(255,255,255,.15)" stroke-width="1.5"/>
+        <line x1="200" y1="372" x2="320" y2="372" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+        <line x1="450" y1="365" x2="580" y2="365" stroke="rgba(255,255,255,.15)" stroke-width="1.5"/>
+        <line x1="640" y1="370" x2="750" y2="370" stroke="rgba(255,255,255,.1)"  stroke-width="1"/>
+        <line x1="800" y1="367" x2="880" y2="367" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ASSOCIATION BADGES ══ -->
+<div class="badges">
+  <!-- NYSBA -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;">
+    <svg width="65" height="65" viewBox="0 0 65 65">
+      <polygon points="32,2 60,16 60,50 32,63 5,50 5,16" fill="#1a5fa8" stroke="#1a5fa8" stroke-width="1"/>
+      <rect x="16" y="22" width="5" height="22" fill="white"/>
+      <rect x="25" y="22" width="5" height="22" fill="white"/>
+      <rect x="34" y="22" width="5" height="22" fill="white"/>
+      <rect x="43" y="22" width="5" height="22" fill="white"/>
+      <rect x="13" y="40" width="38" height="5" fill="white" opacity=".3"/>
+    </svg>
+    <span style="font-family:Arial Black,Arial,sans-serif;font-size:13px;font-weight:900;color:#1a5fa8;letter-spacing:1px;">NYSBA</span>
+  </div>
+  <!-- NYSTLA -->
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;margin-left:10px;">
+    <svg width="58" height="65" viewBox="0 0 58 65">
+      <!-- Torch/liberty stylized icon -->
+      <circle cx="29" cy="22" r="16" fill="none" stroke="#111" stroke-width="3"/>
+      <text x="29" y="28" text-anchor="middle" font-size="20" font-weight="900" fill="#111">⚖</text>
+      <rect x="26" y="36" width="6" height="18" fill="#111"/>
+      <rect x="18" y="52" width="22" height="4" fill="#111"/>
+    </svg>
+    <span style="font-family:Arial Black,Arial,sans-serif;font-size:13px;font-weight:900;color:#111;letter-spacing:1px;">NYSTLA</span>
+  </div>
+</div>
+
+<!-- ══ ABOUT / REVIEWS / SOCIAL ══ -->
+<div class="three-col-section" id="about">
+  <!-- About -->
+  <div class="three-col">
+    <h2 class="col-title">About us</h2>
+    <div class="col-underline"></div>
+    <a href="#" class="col-link">More About Gambone Law Group, PLLC</a>
+  </div>
+  <!-- Reviews -->
+  <div class="three-col">
+    <h2 class="col-title">Reviews</h2>
+    <div class="col-underline"></div>
+  </div>
+  <!-- Social -->
+  <div class="three-col">
+    <h2 class="col-title">Social</h2>
+    <div class="col-underline"></div>
+    <a href="#" class="col-link">Gambone Law Group, PLLC in News</a>
+  </div>
+</div>
+
+<!-- ══ FIRM NAME + PRACTICE AREAS ══ -->
+<div class="two-col-section" id="practice">
+  <!-- Left: firm name -->
+  <div class="firm-name-col">
+    <h2>Gambone Law Group, PLLC</h2>
+    <p class="test-label">Test</p>
+  </div>
+  <!-- Right: practice areas -->
+  <div class="practice-col">
+    <h2>Practice Areas</h2>
+    <ul class="practice-list">
+      <li><a href="#">Motor vehicle accidents</a></li>
+      <li><a href="#">Construction accidents</a></li>
+      <li><a href="#">Municipal liability</a></li>
+      <li><a href="#">Premises liability</a></li>
+      <li><a href="#">Personal injury</a></li>
+      <li><a href="#">Workplace accidents</a></li>
+      <li><a href="#">Wrongful death</a></li>
+      <li><a href="#">Medical malpractice</a></li>
+      <li><a href="#">Product liability</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══ CONTACT FORM ══ -->
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2>Contact with Gambone Law Group, PLLC</h2>
+    <div class="contact-form-row">
+      <div class="form-field">
+        <label>Please Enter Your Name</label>
+        <input type="text" id="cf-name" placeholder="Enter Your Name Here"/>
+      </div>
+      <div class="form-field">
+        <label>Please Enter Phone Number</label>
+        <input type="tel" id="cf-phone" placeholder="Enter Your Cell Number Here"/>
+      </div>
+      <button class="contact-btn" onclick="submitContactForm()">Contact</button>
+    </div>
+    <div class="contact-success" id="cf-success">✓ Thanks for the request! The lawyer will contact with you during the day!</div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <!-- Contacts column -->
+    <div class="footer-contacts">
+      <h3>Contacts</h3>
+      <p>Tel: 718 650 5111 / Fax: 718 682 3155</p>
+      <p>Mail: <a href="mailto:agambone@gambonelawgroup.com">agambone@gambonelawgroup.com</a></p>
+      <p>8652 Woodhaven Blvd, Queens, NY 11421</p>
+      <div class="social-icons">
+        <a href="#" class="soc-btn soc-fb" title="Facebook">f</a>
+        <a href="#" class="soc-btn soc-li" title="LinkedIn">in</a>
+        <a href="#" class="soc-btn soc-yt" title="YouTube">▶</a>
+      </div>
+    </div>
+
+    <!-- Practice Areas column -->
+    <div class="footer-practice">
+      <h3>Practice Areas</h3>
+      <ul class="footer-pa-grid">
+        <li><a href="#">Motor vehicle accidents</a></li>
+        <li><a href="#">Workplace accidents</a></li>
+        <li><a href="#">Construction accidents</a></li>
+        <li><a href="#">Wrongful death</a></li>
+        <li><a href="#">Municipal liability</a></li>
+        <li><a href="#">Medical malpractice</a></li>
+        <li><a href="#">Premises liability</a></li>
+        <li><a href="#">Product liability</a></li>
+        <li><a href="#">Personal injury</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom disclaimer -->
+  <div class="footer-bottom">
+    <p class="disclaimer-text">Attorney Disclaimer: Prior results do not guarantee a similar outcome. This website is for informational purposes only; does not constitute legal advice and may not reflect the most current legal developments. Use of this website does not create an attorney-client relationship.</p>
+    <p class="developed-line">Developed – <a href="#">SePool - Internet Marketing Lab</a></p>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h3>Contact with Gambone Law Group, PLLC</h3>
+    <p>Please enter your details and the lawyer will contact you during the day.</p>
+    <input type="text" class="modal-input" id="m-name" placeholder="Please Enter Your Name"/>
+    <input type="tel"  class="modal-input" id="m-phone" placeholder="Please Enter Phone Number"/>
+    <button class="modal-submit" onclick="submitModal()">Contact</button>
+    <div class="modal-success" id="m-success">✓ Thanks for the request! The lawyer will contact with you during the day!</div>
+  </div>
+</div>
+
+<script>
+  // Modal
+  function openModal(e){ if(e){e.preventDefault();} document.getElementById('modal').classList.add('open'); }
+  function closeModal(){ document.getElementById('modal').classList.remove('open'); document.getElementById('m-success').style.display='none'; }
+  function submitModal(){
+    var n=document.getElementById('m-name').value.trim();
+    var p=document.getElementById('m-phone').value.trim();
+    if(!n||!p){alert('Please enter your name and phone number.');return;}
+    document.getElementById('m-success').style.display='block';
+    document.getElementById('m-name').value='';
+    document.getElementById('m-phone').value='';
+    setTimeout(closeModal,3000);
+  }
+  document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
+  // Contact form
+  function submitContactForm(){
+    var n=document.getElementById('cf-name').value.trim();
+    var p=document.getElementById('cf-phone').value.trim();
+    if(!n||!p){alert('Please enter your name and phone number.');return;}
+    document.getElementById('cf-success').style.display='block';
+    document.getElementById('cf-name').value='';
+    document.getElementById('cf-phone').value='';
+  }
+
+  // Scroll to top button
+  window.addEventListener('scroll',function(){
+    var btn=document.getElementById('scrollTopBtn');
+    if(window.scrollY>300){btn.classList.add('visible');}else{btn.classList.remove('visible');}
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var t=a.getAttribute('href');
+      if(t&&t.length>1){
+        var el=document.querySelector(t);
+        if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
